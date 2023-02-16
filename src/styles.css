@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --black: #1a1a1a;
+    --white: #e1e1e1;
+    --grey: #898989;
+    --purple: #b462ff;
+    --fuschia: #ff45b4;
+    --blue: #18b6ff;
+    --green: #1beb9e;
+    --orange: #ff9528;
+    --yellow: #dddd25;
+    --line: 2.5ch;
+    --font: 'IBM', monospace;
+}
+
+body,
+html {
+    background-color: var(--black);
+    /* min-height: 100vh; */
+    height: 100%;
+    font-family: var(--font);
+    margin: 0;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.white {
+    color: var(--white);
+}
+
+.green {
+    color: var(--green);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.orange {
+    color: var(--orange)
+}

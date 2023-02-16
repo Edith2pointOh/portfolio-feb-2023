@@ -1,0 +1,70 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    color: var(--white);
+    margin-top: 60px;
+    letter-spacing: 2px;
+
+}
+
+.cssLineHight {
+    line-height: 0.5cm;
+    margin: 0px;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
+
+.cursor h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--fuschia);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    animation:
+        typing 3.5s steps(50, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--fuschia);
+    }
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
